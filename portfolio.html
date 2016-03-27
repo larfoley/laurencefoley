@@ -1,0 +1,44 @@
+---
+layout: default
+title: Portfolio
+---
+
+<section class="page__section--portfolio">
+
+  <div class="wrapper">
+
+    <div class="grid">
+      <div class="grid__col grid__col--3-of-6 grid__col--centered">
+        <ul class="portfolio__list">
+        {% for project in site.projects %}
+          <li class="portfolio__card">
+
+            <header class="portfolio__card__header">
+
+                <h2 class="portfolio__card__title">{{ project.name }}</h2>
+
+            </header>
+            <div class="portfolio__card__content">
+              <!-- <div class="box"></div> -->
+              {{ project.content }}
+              <a href="{{ project.link }}" class="button--light">Visit Site</a>
+              {% if project.github %}
+              <div>
+                <a href="{{ project.github }}" class="link">
+                  <img src="/assets/icons/github-light.png" width="20" alt="github">
+                  View Source Code
+                </a>
+              </div>
+              {% endif %}
+            </div>
+
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+</section>

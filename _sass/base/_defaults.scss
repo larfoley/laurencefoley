@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $base-font;
+  color: $color-text;
+  font-size: 1.1em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { color: black; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #ccc; /* old IE */
+    background-color: #ccc; /* Modern Browsers */
+}

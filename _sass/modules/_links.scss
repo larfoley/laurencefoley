@@ -1,0 +1,17 @@
+// Default link
+.link {
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: underline;
+  }
+  img {
+    margin-right: 5px;
+    vertical-align: top;
+  }
+
+  &--dark {
+    @extend .link;
+    color: black;
+  }
+}

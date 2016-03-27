@@ -1,0 +1,38 @@
+.form {
+
+  &__field {
+    margin-bottom: 1em;
+  }
+
+  &__input {
+    //display: block;
+    width: 100%;
+    padding: 1em;
+  }
+
+
+  &__text-area {
+
+  }
+
+  &__input, &__textarea {
+    //display: block;
+    width: 100%;
+    padding: 1em;
+  }
+
+  .form__submit {}
+
+  &--contact {
+    //background: #373D49;
+  }
+}
+
+#test {
+  width: 32px;
+  background-image: url('https://openclipart.org/image/2400px/svg_to_png/202776/pawn.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #3fc;
+}

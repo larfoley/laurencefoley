@@ -1,0 +1,15 @@
+.hr {
+  background-color: $color-primary;
+  border: 0 none;
+  color: $color-primary;
+  height: 10px;
+  width: 5em;
+  &--small {
+    @extend .hr;
+  }
+
+  &__centered {
+
+    &--small {}
+  }
+}

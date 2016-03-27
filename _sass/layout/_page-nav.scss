@@ -1,0 +1,55 @@
+.site-nav {
+  background: white;
+  position: relative;
+
+  &__button {
+    display: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: .5em 0;
+    @media screen and (min-width: 700px) {
+      display: none !important;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    //transition: .5s;
+    background: white;
+    &--is-hidden {
+      @media screen and (max-width: 700px) {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  &__item {
+    list-style: none;
+    @media screen and (min-width: 700px) {
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    display: inline-block;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+    //text-align: center;
+    padding: 1em;
+    &:last-child {
+      padding-left: 0;
+    }
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
